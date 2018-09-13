@@ -1,0 +1,27 @@
+@import 'src/@fuse/scss/fuse';
+
+fuse-navigation {
+    display: flex;
+    flex: 1 0 auto;
+
+    > .nav {
+        margin: auto;
+        padding: 0;
+        width: 72.29%;
+
+        .logo-frame {
+	        height: 126px;
+	    }
+
+	    .logo-helper {
+	        display: inline-block;
+		    height: 100%;
+		    vertical-align: middle;
+	    }
+
+	    .logo-img {
+	        vertical-align: middle;
+	        max-height: 60%;
+	    }
+    }
+}

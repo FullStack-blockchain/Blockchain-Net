@@ -1,0 +1,16 @@
+navbar-horizontal-style-1 {
+
+}
+
+navbar {
+
+    &.horizontal-style-1 {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        width: 100%;
+        height: 126px;
+        max-height: 126px;
+        min-height: 126px;
+    }
+}
