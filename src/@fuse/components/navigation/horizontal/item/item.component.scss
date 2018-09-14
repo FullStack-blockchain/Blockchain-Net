@@ -5,4 +5,17 @@
 	.board-list-item {
 		text-align: center;
 	}
+	.board-name{
+		color: #124041;
+		font-weight: bold;
+		margin-top: 10px;
+		font-size: 14px;
+	}
+	.nav-board-item{
+		color: #504f4f;
+	}
+
+	.nav-link:hover .nav-board-item{
+		color: #00b0e0;
+	}
 }

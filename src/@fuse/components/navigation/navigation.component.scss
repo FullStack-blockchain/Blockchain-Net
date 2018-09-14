@@ -5,11 +5,16 @@ fuse-navigation {
     flex: 1 0 auto;
 
     > .nav {
-        margin: auto;
+    	margin: auto auto auto 13.86%;
         padding: 0;
-        width: 72.29%;
+        width: 100%;
 
         .logo-frame {
+	        height: 126px;
+	        margin-right: 4%;
+	    }
+
+	    .logo-button {
 	        height: 126px;
 	    }
 
@@ -22,6 +27,21 @@ fuse-navigation {
 	    .logo-img {
 	        vertical-align: middle;
 	        max-height: 60%;
+	    }
+	    .btn-mcolor-green {
+	    	background: #8ac239;
+	    	color: #fff;
+	    	font-size: 16px;
+	    	padding: 5px 20px 5px 20px;
+    		margin: 10px;
+	    }
+
+	    .btn-mcolor-cray {
+	    	background: #00b0e0;
+	    	color: #fff;
+	    	font-size: 16px;
+	    	padding: 5px 20px 5px 20px;
+    		margin: 10px;
 	    }
     }
 }

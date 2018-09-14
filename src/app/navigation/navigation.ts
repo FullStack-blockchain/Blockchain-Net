@@ -5,35 +5,35 @@ export const navigation: FuseNavigation[] = [
         id   : 'about',
         title: 'ABOUT',
         type : 'item',
-        icon : 'alarm',
+        icon : 'camera_front',
         url  : '/pages/coming-soon'
     },
     {
         id   : 'contact',
         title: 'CONTACT',
         type : 'item',
-        icon : 'alarm',
+        icon : 'card_travel',
         url  : '/pages/coming-soon'
     },
     {
         id   : 'whitepaper',
         title: 'WHITEPAPER',
         type : 'item',
-        icon : 'alarm',
+        icon : 'credit_card',
         url  : '/pages/coming-soon'
     },
     {
         id   : 'source-code',
         title: 'SOURCE CODE',
         type : 'item',
-        icon : 'alarm',
+        icon : 'desktop_mac',
         url  : '/pages/coming-soon'
     },
     {
         id   : 'blog',
         title: 'BLOG',
         type : 'item',
-        icon : 'alarm',
+        icon : 'child_care',
         url  : '/pages/coming-soon'
     }
 ];

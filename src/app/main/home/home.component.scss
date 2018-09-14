@@ -1,0 +1,189 @@
+:host {
+
+    #home {
+        background: url("assets/sia/images/banners/banner_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        width: 100%;
+        height: 639px;
+        min-height: 639px;
+        background-color: transparent;
+        position: relative;
+        display: table;
+    }
+    #home .home-content {
+        display: table-cell;
+        width: 100%;
+        height: 100%;
+    }
+    #home .row {
+        margin: auto auto auto 13.86%;
+        padding: 0px;
+        width: 100%;
+    }
+    #home .home-content .contents {
+        position: relative;
+    }
+    #home .home-content-left {
+        height: 639px;
+        display: table-cell; 
+        vertical-align: middle; 
+    }
+
+    #home .home-image-right{
+        display: block;
+        position: absolute;
+        left: 15%;
+        top: 40%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        padding-top: 21rem;
+        z-index: 500;
+        width: 70%;
+        text-align: right;
+    }
+    #home .home-image-right img {
+        vertical-align: bottom;
+        width: 75%;
+    }
+
+    #home .btn-banner {
+        padding: 10px 40px 10px 40px;
+        margin-right: 20px;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    #home .btn-gray{
+        color: #4d4e4e;
+    }
+    #home .btn-trans{
+        color: #fff;
+        background: #fff0;
+        border: 1px solid #00b0e0;
+    }
+    #home .banner-left-text{
+        font-size: 55px;
+        font-family: "Harabara Bold";
+        line-height: 1.2;
+        color: #fff;
+    }
+
+    #in-press {
+        background: #fff;
+    }
+
+    #in-press .title {
+        padding: 50px 0px 30px 0px;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #8ac239;
+    }
+    #in-press .mark-img {
+        padding: 0px 0px 50px 0px;
+    }
+
+    #in-help {
+        background: #f4f5f7;
+        margin: 0px;
+        padding: 0px 13.86% 0px 13.86%;
+        width: 100%;
+    }
+    #in-help .help-row {
+        padding: 80px 0px 80px 0px;
+    }
+
+    #in-help .help-left {
+        padding: 0px 100px 0px 0px;
+    }
+    #in-help .help-left h1{
+        color: #2a4055;
+        font-size: 47px;
+        margin: 0px;
+        padding:0px;
+    }
+    #in-help .help-left p{
+        color: #1b1b1b;
+        font-size: 19px;
+        line-height: 1.7
+    }
+
+    #in-help .name {
+        padding-left: 20px;
+    }
+    #in-help .help-right h1 {
+        font-size: 23px;
+        color: #000;
+        padding: 0px;
+        margin: 0px;
+    }
+    #in-help .help-right p {
+        font-size: 17px;
+        color: #595959;
+        line-height: 1.5;
+        margin: 0px 0px 50px 0px;
+    }
+
+    #in-health {
+        background: url("assets/sia/images/healths/health_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        padding: 0px 0px 80px 0px;
+    }
+    #in-health .title{
+        color: #fff;
+        font-size: 54px;
+        margin: 60px;
+        text-align: center;
+    }
+
+    #in-health .contents{
+        margin: 0px;
+        padding: 0px 13.86% 0px 13.86%;
+        width: 100%;
+    }
+    #in-health .contents h1{ 
+        color: #fff;
+        font-size: 27px;
+    }
+    #in-health .contents p{
+        color: #fff;
+        font-size: 19px;
+        padding: 0px;
+        margin: 0px;
+        line-height: 1.5
+    }
+    #in-health .contents .img-link{
+        position: absolute;
+        left: 8.3%;
+    }
+    #in-health .contents .img-link hr{
+        position: absolute;
+        width: 0px;
+        height: 470px;
+        border: 1px solid #ffffff26;
+        left: 50%;
+    }
+    #in-health .contents .img-link img{
+        z-index: 500;
+    }
+    
+    #in-block{
+        background: url("assets/sia/images/block/block.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        padding: 100px 0px 80px 0px;
+    }
+    #in-block .big-title{
+        color: #fff;
+        font-size: 47px;
+    }
+    #in-block .small-title{
+        color: #fff;
+        font-size: 19px;
+    }
+}
