@@ -1,7 +1,7 @@
 :host {
 
     #home {
-        background: url("assets/sia/images/banners/banner_bg.jpg");
+        background: url("../../../assets/sia/images/banners/banner_bg.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
 
@@ -127,7 +127,7 @@
     }
 
     #in-health {
-        background: url("assets/sia/images/healths/health_bg.jpg");
+        background: url("../../../assets/sia/images/healths/health_bg.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
 
@@ -163,7 +163,7 @@
     #in-health .contents .img-link hr{
         position: absolute;
         width: 0px;
-        height: 470px;
+        height: 350px;
         border: 1px solid #ffffff26;
         left: 50%;
     }
@@ -172,7 +172,7 @@
     }
     
     #in-block{
-        background: url("assets/sia/images/block/block.jpg");
+        background: url("../../../assets/sia/images/block/block.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
 
@@ -186,4 +186,79 @@
         color: #fff;
         font-size: 19px;
     }
+
+    #in-block .contents{
+        width: 72.3%;
+        margin-top: 40px;
+    }
+    #in-block .contents .content-items{
+        text-align: center;
+    }
+
+    #in-block .contents .content-items h1{
+        color: #fff;
+        font-size: 24px;
+    }
+    #in-block .contents .content-items p{
+        color: #fff;
+        font-size: 19px;
+    }
+
+    #in-contact{
+        background: #fff;
+        padding: 100px 0px 80px 0px;
+    }
+    #in-contact .title{
+        color: #000;
+        font-size: 42px;
+    }
+
+    #in-contact .contents{
+        width: 72.3%;
+        padding: 50px;
+    }
+    #in-contact .contents .content-items{
+        margin-left: 20px;
+    }
+    #in-contact .contents input{
+        color: #000;
+        background: #f7f7f7;
+        border: 2px solid #d7d7d7;
+        font-size: 25px;
+        border-radius: 5px;
+        height: 50px;
+        padding: 10px;
+        margin-right: 10px;
+        width: 100%;
+    }
+    #in-contact .contents textarea{
+        color: #000;
+        background: #f7f7f7;
+        border: 2px solid #d7d7d7;
+        font-size: 25px;
+        border-radius: 5px;
+        height: 50px;
+        padding: 10px;
+        margin-right: 10px;
+        width: 100%;
+        height: 200px;
+        resize: none;
+    }
+
+    #in-contact .contents p {
+        color: #3d3d3d;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #in-contact .btn-mcolor-green {
+        background: #8ac239;
+        color: #fff;
+        font-size: 16px;
+        padding: 5px 20px 5px 20px;
+        margin: 10px 0px 10px 10px;
+    }
+
+    
+
 }

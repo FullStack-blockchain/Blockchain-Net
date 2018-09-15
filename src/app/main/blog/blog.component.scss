@@ -1,0 +1,97 @@
+:host {
+
+    #in-title {
+        background: url("../../../assets/sia/images/banners/banner_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+
+        width: 100%;
+        background-color: transparent;
+        position: relative;
+        display: table;
+    }
+    #in-title .big-title{
+        margin: 55px;
+    }
+    #in-title .big-title h1{
+        font-size: 52px;
+        margin:0px;
+        padding:0px;
+        color: #fff;
+    }
+    #in-title .btn-title{
+        position: absolute;
+        bottom: -35px;
+    }
+    #in-title .btn-type{
+        width: 250px;
+        height: 55px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0px;
+        margin: 10px 0px 10px 10px;
+    }
+    .btn-mcolor-green {
+        background: #8ac239;
+        color: #fff;
+    }
+    .btn-mcolor-cray {
+        background: #38b6a1;
+        color: #fff;
+    }
+    .btn-mcolor-blue {
+        background: #00b0e0;
+        color: #fff;
+    }
+
+
+    #in-text{
+        background: #f4f5f7;
+        padding: 10px 0px 80px 0px;
+    }
+
+    #in-text .contents{
+        width: 72.3%;
+        padding: 0px;
+    }
+
+    #in-text .contents .content-items{
+        padding: 0px;
+        margin: 100px 0px 0px 0px;
+    }
+    #in-text .contents h1 {
+        color: #233034;
+        font-size: 37px;
+        font-weight: bold;
+        padding: 0px;
+        margin: 30px 0px 0px 0px;
+    }
+    #in-text .contents h2 {
+        font-size: 21px;
+        color: #8ac239;
+        font-weight: bold;
+        padding: 0px;
+        margin: 45px 0px 0px 0px;
+    }
+    #in-text .contents .contents-date {
+        color: #233034;
+        font-size: 14px;
+        padding: 0px;
+        margin: 15px 0px 0px 0px;
+    }
+    #in-text .contents .contents-normal {
+        color: #233034;
+        font-size: 17px;
+        padding: 0px;
+        margin: 30px 0px 0px 0px;
+        line-height: 1.8;
+    }
+    #in-text .contents .btn-readmore {
+        width: 250px;
+        height: 55px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0px;
+        margin: 45px 0px 0px 0px;
+    }
+}

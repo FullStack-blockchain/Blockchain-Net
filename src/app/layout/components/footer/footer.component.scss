@@ -1,16 +1,61 @@
 :host {
-    display: flex;
-    flex: 0 0 auto;
-    z-index: 3;
-
-    .mat-toolbar {
-        background: inherit;
-        color: inherit;
-        box-shadow: 0px -1px 1px -1px rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.14), 0px -1px 3px 0px rgba(0, 0, 0, 0.12);
+    #in-link {
+        background: #1f1f29;
+    }
+    #in-link .contents{
+        width: 100%;
+    }
+    #in-link .link-item{
+        text-align: center;
+        background: #3c3c3c4f;
+        height: 200px;
+        margin-right: 1px;
+    }
+    #in-link .link-item img{
+        margin-top: 50px;
+    }
+    #in-link .link-item h1{
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
     }
 
-    &.above {
-        position: relative;
-        z-index: 99;
+    #in-footer {
+        background: #1f1f29;
+    }
+
+    #in-footer .contents {
+        width: 72.3%;
+        border-bottom: 1px dashed #686871;
+    }
+    #in-footer .contents .link-item{
+        
+    }
+
+    #in-footer .contents .link-url{
+        padding: 50px 0px 50px 0px;
+        text-align: right;
+    }
+
+    #in-footer .contents .link-url .link-url-item{
+        color: #81818e;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration:none;
+        cursor: pointer;
+        margin: 0px 0px 0px 60px;
+    }
+
+    #in-footer .contents .link-url .actived{
+        color: #fff;
+    }
+
+    #in-footer .contents-bt {
+        width: 72.3%;
+        padding: 30px;
+    }
+    #in-footer .contents-bt p {
+        color: #88888c;
+        font-size: 15px;
     }
 }

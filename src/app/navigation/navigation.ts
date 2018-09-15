@@ -6,34 +6,34 @@ export const navigation: FuseNavigation[] = [
         title: 'ABOUT',
         type : 'item',
         icon : 'camera_front',
-        url  : '/pages/coming-soon'
+        url  : '/about'
     },
     {
         id   : 'contact',
         title: 'CONTACT',
         type : 'item',
         icon : 'card_travel',
-        url  : '/pages/coming-soon'
+        url  : '/contact'
     },
     {
         id   : 'whitepaper',
         title: 'WHITEPAPER',
         type : 'item',
         icon : 'credit_card',
-        url  : '/pages/coming-soon'
+        url  : '/whitepaper'
     },
     {
         id   : 'source-code',
         title: 'SOURCE CODE',
         type : 'item',
         icon : 'desktop_mac',
-        url  : '/pages/coming-soon'
+        url  : '/source-code'
     },
     {
         id   : 'blog',
         title: 'BLOG',
         type : 'item',
         icon : 'child_care',
-        url  : '/pages/coming-soon'
+        url  : '/blog'
     }
 ];

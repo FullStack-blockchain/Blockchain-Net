@@ -18,11 +18,33 @@ import { AppComponent } from 'app/app.component';
 import { LayoutModule } from 'app/layout/layout.module';
 import { SampleModule } from 'app/main/sample/sample.module';
 import { HomeModule } from 'app/main/home/home.module';
+import { AboutModule } from 'app/main/about/about.module';
+import { BlogModule } from 'app/main/blog/blog.module';
 
 const appRoutes: Routes = [
     {
         path      : '**',
         redirectTo: 'home'
+    },
+    {
+        path      : 'about',
+        redirectTo: 'about'
+    },
+    {
+        path      : 'blog',
+        redirectTo: 'blog'
+    },
+    {
+        path      : 'login',
+        redirectTo: 'login'
+    },
+    {
+        path      : 'signup',
+        redirectTo: 'signup'
+    },
+    {
+        path      : 'myaccount',
+        redirectTo: 'myaccount'
     }
 ];
 
@@ -54,7 +76,9 @@ const appRoutes: Routes = [
 
         // App modules
         LayoutModule,
-        HomeModule
+        HomeModule,
+        AboutModule,
+        BlogModule
     ],
     bootstrap   : [
         AppComponent
