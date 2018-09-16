@@ -1,0 +1,89 @@
+:host {
+
+    #in-contact{
+        background: url("../../../assets/sia/images/banners/banner_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        width: 100%;
+        background-color: transparent;
+        position: relative;
+        display: table;
+    }
+
+    #in-contact .contents{
+        width: 60.25%;
+        padding: 20px;
+        border: 1px solid #e4e4e4;
+        border-radius: 5px;
+        background: #fff;
+        margin: 80px;
+    }
+    #in-contact .contents h1 {
+        color: #000;
+        font-size: 52px;
+        margin: 10px 0px 10px 0px;
+    }
+    #in-contact .contents p {
+        color: #1c3458;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    #in-contact .contents h6 {
+        font-size: 15px;
+        color: #1c3458;
+        margin: 0px 0px 0px 27px
+    }
+    #in-contact .chk-know{
+        font-size: 15px;
+        color: #1c3458;
+    }
+    #in-contact .chk-div{
+        margin: 40px 0px;
+    }
+    
+
+    #in-contact .contents .content-items{
+        margin-left: 20px;
+    }
+    #in-contact .contents .abtxt {
+        color: #000;
+        background: #fff;
+        border: 1px solid #00010126;
+        font-size: 25px;
+        border-radius: 5px;
+        height: 50px;
+        padding: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #in-contact .btn-mcolor-green {
+        background: #8ac239;
+        color: #fff;
+        font-size: 16px;
+        padding: 5px 20px 5px 20px;
+        margin: 10px 0px 10px 10px;
+    }
+    #in-contact .width-full {
+        width: 100%;
+        margin: 20px 0px 20px 0px;
+    }
+
+    #in-contact .login-div {
+        text-align: right;
+    }
+    #in-contact .login-div a{
+        text-decoration: none;
+        color: #8ac239;
+        font-size: 16px;
+    }
+    #in-contact .login-div h5{
+        font-size: 16px;
+        color: #131313;
+        margin: 0px;
+    }
+
+
+}

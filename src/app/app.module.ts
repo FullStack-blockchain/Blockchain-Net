@@ -20,6 +20,9 @@ import { SampleModule } from 'app/main/sample/sample.module';
 import { HomeModule } from 'app/main/home/home.module';
 import { AboutModule } from 'app/main/about/about.module';
 import { BlogModule } from 'app/main/blog/blog.module';
+import { SignupModule } from 'app/main/signup/signup.module';
+import { LoginModule } from 'app/main/login/login.module';
+import { MyaccountModule } from 'app/main/myaccount/myaccount.module';
 
 const appRoutes: Routes = [
     {
@@ -78,7 +81,10 @@ const appRoutes: Routes = [
         LayoutModule,
         HomeModule,
         AboutModule,
-        BlogModule
+        BlogModule,
+        SignupModule,
+        LoginModule,
+        MyaccountModule
     ],
     bootstrap   : [
         AppComponent

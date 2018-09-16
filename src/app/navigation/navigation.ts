@@ -13,7 +13,7 @@ export const navigation: FuseNavigation[] = [
         title: 'CONTACT',
         type : 'item',
         icon : 'card_travel',
-        url  : '/contact'
+        url  : '/signup'
     },
     {
         id   : 'whitepaper',
