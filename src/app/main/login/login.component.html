@@ -1,54 +1,39 @@
 <div class="page-layout simple">
 
-    <div id="in-title" fxLayout="column" fxLayoutAlign="center center">
-        <div class="big-title" fxLayout="column" fxLayout.gt-md="row">
-            <div fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
-                <h1>Allergies</h1>
-            </div>
-        </div>
-    </div>
-    <div id="in-contact" fxLayout="column" fxLayoutAlign="center center">
-        <div class="contents" fxLayout="column" fxLayoutAlign="center left">
-            <div fxLayout="column" fxLayout.gt-md="row">
-                <div class="content-items" fxFlex="31" fxFlex.gt-xs="31" fxFlex.gt-sm="31">
-                    <p>Substance</p>
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
-                </div>
-                <div class="content-items" fxFlex="25" fxFlex.gt-xs="25" fxFlex.gt-sm="25">
-                    <p>Category</p>
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
-                </div>
-                <div class="content-items" fxFlex="19" fxFlex.gt-xs="19" fxFlex.gt-sm="19">
-                    <p>Severity</p>
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
-                </div>
-                <div class="content-items" fxFlex="25" fxFlex.gt-xs="25" fxFlex.gt-sm="25">
-                    <p>Reactions</p>
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
+    <div id="in-login" fxLayout="column" fxLayoutAlign="center center">
+        <div class="contents" fxLayout="column" fxLayout.gt-md="row">
+            <div class="login-left" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
+                <div class="left-contents" fxLayout="column" fxLayoutAlign="center left">
+                    <div fxLayout="column" fxLayout.gt-md="row">
+                        <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
+                            <h1>My Account</h1>
+                        </div>
+                    </div>
+                    <div fxLayout="column" fxLayout.gt-md="row">
+                        <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
+                            <input class="abtxt" type="text" placeholder="EMAIL"/>
+                        </div>
+                    </div>
+                    <div fxLayout="column" fxLayout.gt-md="row">
+                        <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
+                            <input class="abtxt" type="text" placeholder="PASSOWRD" />
+                        </div>
+                    </div>
+                    <div fxLayout="column" fxLayout.gt-md="row"  fxLayoutAlign="center center">
+                        <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
+                            <button mat-raised-button class="btn-mcolor-green width-full">Login -></button>
+                        </div>
+                    </div>
+                    <div class="login-div" fxLayout="column" fxLayout.gt-md="row">
+                        <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
+                            <a href="/login"><h5><u>Create Account</u></h5></a>
+                            <a href="/login"><h5><u>Forgot Password</u></h5></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div fxLayout="column" fxLayout.gt-md="row"  fxLayoutAlign="center center">
-                <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
-                    <button mat-raised-button class="btn-mcolor-green btn-addmore">ADD MORE</button>
-                </div>
-            </div>
-            <div fxLayout="column" fxLayout.gt-md="row">
-                <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
-                    <mat-checkbox class="chk-know" >NO KNOWN ALLERGIES</mat-checkbox>
-                </div>
-            </div>
-            <div fxLayout="column" fxLayout.gt-md="row"  fxLayoutAlign="center center">
-                <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
-                    <button mat-raised-button class="btn-mcolor-green width-full">DOCUMENT ALLERGIES</button>
-                </div>
+            <div class="login-right" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
+                <img src="assets/sia/images/login/login_bg.jpg" />
             </div>
         </div>
     </div>

@@ -5,7 +5,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FuseSharedModule } from '@fuse/shared.module';
 
 import { LoginComponent } from './login.component';
-import { MatButtonModule, MatIconModule, MatCheckboxModule } from '@angular/material';
+import { MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule, MatSelectModule, MatCheckboxModule } from '@angular/material';
 
 const routes = [
     {
@@ -24,6 +24,10 @@ const routes = [
         MatButtonModule,
         MatIconModule,
         MatCheckboxModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatSelectModule,
+
 
         TranslateModule,
 

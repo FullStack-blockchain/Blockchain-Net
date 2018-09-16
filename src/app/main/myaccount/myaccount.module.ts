@@ -5,7 +5,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FuseSharedModule } from '@fuse/shared.module';
 
 import { MyaccountComponent } from './myaccount.component';
-import { MatButtonModule, MatIconModule, MatCheckboxModule } from '@angular/material';
+import { MatButtonModule, MatIconModule, MatCheckboxModule, MatGridListModule } from '@angular/material';
 
 const routes = [
     {
@@ -24,6 +24,7 @@ const routes = [
         MatButtonModule,
         MatIconModule,
         MatCheckboxModule,
+        MatGridListModule,
 
         TranslateModule,
 

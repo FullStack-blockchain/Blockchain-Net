@@ -11,7 +11,11 @@ import { locale as turkish } from './i18n/tr';
   styleUrls: ['./myaccount.component.scss']
 })
 
+
+
 export class MyaccountComponent implements OnInit {
+    gray_color :String;
+    white_color :String;
 	/**
      * Constructor
      *
@@ -21,10 +25,12 @@ export class MyaccountComponent implements OnInit {
         private _fuseTranslationLoaderService: FuseTranslationLoaderService
     )
     {
+        this.gray_color = '#fafafb';
+        this.white_color = '#fff';
         this._fuseTranslationLoaderService.loadTranslations(english, turkish);
     }
 
-	ngOnInit() {
-	}
+  	ngOnInit() {
+  	}
 
 }

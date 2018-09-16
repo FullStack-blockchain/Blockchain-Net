@@ -27,7 +27,7 @@ export const navigation: FuseNavigation[] = [
         title: 'SOURCE CODE',
         type : 'item',
         icon : 'desktop_mac',
-        url  : '/source-code'
+        url  : '/myaccount'
     },
     {
         id   : 'blog',

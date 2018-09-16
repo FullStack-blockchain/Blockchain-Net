@@ -3,43 +3,155 @@
     <div id="in-title" fxLayout="column" fxLayoutAlign="center center">
         <div class="big-title" fxLayout="column" fxLayout.gt-md="row">
             <div fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
-                <h1>Allergies</h1>
+                <h1>My Account</h1>
             </div>
         </div>
     </div>
     <div id="in-contact" fxLayout="column" fxLayoutAlign="center center">
         <div class="contents" fxLayout="column" fxLayoutAlign="center left">
             <div fxLayout="column" fxLayout.gt-md="row">
-                <div class="content-items" fxFlex="31" fxFlex.gt-xs="31" fxFlex.gt-sm="31">
-                    <p>Substance</p>
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
+                <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
+                    <mat-grid-list class="mat-grid" cols="3" rowHeight="4.5:1">
+                      <mat-grid-tile [colspan]="1" [rowspan]="5" [style.background]="white_color">
+                        <img src="assets/sia/images/logos/logo_left.png" >
+                      </mat-grid-tile>
+                      <mat-grid-tile [colspan]="2" [rowspan]="1" [style.background]="gray_color">
+                        <h1>USERNAME'S WALLET</h1>
+                      </mat-grid-tile>
+                      <mat-grid-tile [colspan]="2" [rowspan]="4" [style.background]="white_color">
+                        <div class="mat-grid-chart-row" fxLayout="column" fxLayout.gt-md="row"  fxLayoutAlign="center center">
+                            <div class="mat-grid-chart-row-left" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
+                                chart
+                            </div>
+                            <div class="mat-grid-chart-row-right" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
+                                <div class="mat-grid-chart-row-right-button" fxLayout="column" fxLayoutAlign="center left">
+                                    <div fxLayout="column" fxLayout.gt-md="row">
+                                        <div fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
+                                            <div class="button-item"><button mat-raised-button class="btn-mcolor-green">SEND</button></div>
+                                        </div>
+                                    </div>
+                                    <div fxLayout="column" fxLayout.gt-md="row">
+                                        <div fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
+                                            <div class="button-item"><button mat-raised-button class="btn-mcolor-cray">RECEIVE</button></div>
+                                        </div>
+                                    </div>
+                                    <div fxLayout="column" fxLayout.gt-md="row">
+                                        <div fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
+                                            <div class="button-item"><button mat-raised-button class="btn-mcolor-blue">WITHDRAW</button></div>
+                                        </div>
+                                    </div>
+                                    <div fxLayout="column" fxLayout.gt-md="row">
+                                        <div fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
+                                            <div class="button-item"><button mat-raised-button class="btn-mcolor-graydark">BUY</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </mat-grid-tile>
+                    </mat-grid-list>
                 </div>
-                <div class="content-items" fxFlex="25" fxFlex.gt-xs="25" fxFlex.gt-sm="25">
-                    <p>Category</p>
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
+            </div>
+            <div class="table-title" fxLayout="column" fxLayout.gt-md="row">
+                <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
+                    <h1>MY HEALTH RECORD</h1>
                 </div>
-                <div class="content-items" fxFlex="19" fxFlex.gt-xs="19" fxFlex.gt-sm="19">
-                    <p>Severity</p>
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
-                </div>
-                <div class="content-items" fxFlex="25" fxFlex.gt-xs="25" fxFlex.gt-sm="25">
-                    <p>Reactions</p>
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
-                    <input class="abtxt" type="text" />
+                <div class="content-items right" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
+                    <a href=""><u>UPDATE ACCOUNT</u></a>
                 </div>
             </div>
             <div fxLayout="column" fxLayout.gt-md="row"  fxLayoutAlign="center center">
                 <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
-                    <button mat-raised-button class="btn-mcolor-green btn-addmore">ADD MORE</button>
+                    <table class="table-type1" width="100%">
+                        <thead>
+                            <tr>
+                                <th class="left" width="31%">DESCRIPTION</th>
+                                <th class="left" width="24%">DATA SOURCE</th>
+                                <th class="center" width="20%">DATE</th>
+                                <th class="center" width="25%">DOWNLOAD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="description left">ALLERGY LIST</td>
+                                <td class="data-source left">Health Port</td>
+                                <td class="date center">09 / 22 / 2018 </td>
+                                <td class="download center"><button mat-raised-button class="btn-mcolor-cray">DOWNLOAD</button></td>
+                            </tr>
+                            <tr>
+                                <td class="description left">MEDICATION LIST</td>
+                                <td class="data-source left">Health Port</td>
+                                <td class="date center">09 / 22 / 2018 </td>
+                                <td class="download center"><button mat-raised-button class="btn-mcolor-cray">DOWNLOAD</button></td>
+                            </tr>
+                            <tr>
+                                <td class="description left">PROCEDURE HISTORY</td>
+                                <td class="data-source left">Health Port</td>
+                                <td class="date center">09 / 22 / 2018 </td>
+                                <td class="download center"><button mat-raised-button class="btn-mcolor-cray">DOWNLOAD</button></td>
+                            </tr>
+                            <tr>
+                                <td class="description left">APPLE HEALTH DATA</td>
+                                <td class="data-source left">Health Port</td>
+                                <td class="date center">09 / 22 / 2018 </td>
+                                <td class="download center"><button mat-raised-button class="btn-mcolor-cray">DOWNLOAD</button></td>
+                            </tr>
+                            <tr>
+                                <td class="description left">FITBIT DATA</td>
+                                <td class="data-source left">Health Port</td>
+                                <td class="date center">09 / 22 / 2018 </td>
+                                <td class="download center"><button mat-raised-button class="btn-mcolor-cray">DOWNLOAD</button></td>
+                            </tr>
+                            <tr>
+                                <td class="description left">PATIENT PORTAL DATA</td>
+                                <td class="data-source left">Health Port</td>
+                                <td class="date center">09 / 22 / 2018 </td>
+                                <td class="download center"><button mat-raised-button class="btn-mcolor-cray">DOWNLOAD</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+
+            <div fxLayout="column" fxLayout.gt-md="row"  fxLayoutAlign="center center">
+                <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
+                    <table class="table-type1" width="100%">
+                        <thead>
+                            <tr>
+                                <th class="left" width="75%">DESCRIPTION</th>
+                                <th class="center" width="25%">UPLOAD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="description left">ALLERGY LIST</td>
+                                <td class="download center"><button mat-raised-button class="btn-mcolor-cray">DOCUMENT</button></td>
+                            </tr>
+                            <tr>
+                                <td class="description left">MEDICATION LIST</td>
+                                <td class="download center"><button mat-raised-button class="btn-mcolor-cray">DOCUMENT</button></td>
+                            </tr>
+                            <tr>
+                                <td class="description left">PROCEDURE HISTORY</td>
+                                <td class="download center"><button mat-raised-button class="btn-mcolor-cray">DOCUMENT</button></td>
+                            </tr>
+                            <tr>
+                                <td class="description left">APPLE HEALTH DATA</td>
+                                <td class="download center"><button mat-raised-button class="btn-mcolor-cray">DOCUMENT</button></td>
+                            </tr>
+                            <tr>
+                                <td class="description left">FITBIT DATA</td>
+                                <td class="download center"><button mat-raised-button class="btn-mcolor-cray">DOCUMENT</button></td>
+                            </tr>
+                            <tr>
+                                <td class="description left">PATIENT PORTAL DATA</td>
+                                <td class="download center"><button mat-raised-button class="btn-mcolor-cray">DOCUMENT</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
             <div fxLayout="column" fxLayout.gt-md="row">
                 <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
                     <mat-checkbox class="chk-know" >NO KNOWN ALLERGIES</mat-checkbox>

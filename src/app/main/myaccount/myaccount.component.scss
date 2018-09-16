@@ -31,6 +31,155 @@
         border-radius: 5px;
         background: #fff;
     }
+    #in-contact .contents .mat-grid{
+        width: 100%;
+        border: 1px solid #e4e4e4;
+        border-radius: 5px;
+        background: #dfe5e7;
+    }
+    #in-contact .contents .mat-grid h1{
+        color: #000;
+        font-size: 24px;
+        font-weight: bold;
+        width: 100%;
+        margin: 40px;
+    }
+    #in-contact .contents .mat-grid .mat-grid-chart-row {
+        width: 100%;
+    }
+    #in-contact .contents .mat-grid-chart-row-right-button{
+        width: 100%;
+        text-align: right;
+    }
+    #in-contact .contents .mat-grid-chart-row-right-button .button-item{
+        width: 100%;
+        padding: 20px;
+        padding: 5px 30px;
+    }
+    #in-contact .contents .mat-grid-chart-row-right-button .button-item button{
+        width: 80%;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    #in-contact .btn-mcolor-green {
+        background: #8ac239;
+        color: #fff;
+    }
+    #in-contact .btn-mcolor-cray {
+        background: #00b0e0;
+        color: #fff;
+    }
+    #in-contact .btn-mcolor-blue {
+        background: #38b6a1;
+        color: #fff;
+    }
+    #in-contact .btn-mcolor-graydark {
+        background: #424e5b;
+        color: #fff;
+    }
+    #in-contact .contents .table-title{
+        margin: 50px 0px 0px 0px;
+    }
+    #in-contact .contents .table-title h1{
+        color: #000;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0px;
+    }
+    #in-contact .contents .table-title .right{
+        text-align: right;
+    }
+    #in-contact .contents .table-title a{
+        color: #8ac239;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 5px 0px;
+    }
+
+    #in-contact .contents .table-type1{
+        border: 1px solid #CCCCCC;
+        border-radius: 6px 6px 6px 6px;
+        -moz-border-radius: 6px 6px 6px 6px;
+        -webkit-border-radius: 6px 6px 6px 6px;
+        box-shadow: 0 1px 1px #CCCCCC;
+        border-spacing: 0;
+        margin: 20px 0px;
+    }
+    #in-contact .contents .table-type1 th:first-child {
+        border-radius: 6px 0 0 0;
+        -moz-border-radius: 6px 0 0 0;
+        -webkit-border-radius: 6px 0 0 0;
+    }
+    #in-contact .contents .table-type1 th:last-child {
+        border-radius: 0 6px 0 0;
+        -moz-border-radius: 0 6px 0 0;
+        -webkit-border-radius: 0 6px 0 0;
+    }
+    #in-contact .contents .table-type1 td:first-child, .bordered th:first-child {
+        border-left: medium none;
+    }
+
+    #in-contact .contents .table-type1 th {
+        background-color: #424e5b;
+        background-image: -moz-linear-gradient(center top , #424e5b, #424e5b);
+        background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#424e5b), to(#424e5b), color-stop(.4, #424e5b));
+        border-top: medium none;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        text-align: left;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    #in-contact .contents .table-type1 td {
+        border-left: 1px solid #CCCCCC;
+        border-top: 1px solid #CCCCCC;
+        padding: 20px;
+    }
+
+    #in-contact .contents .table-type1 .left{
+        text-align: left;
+    }
+    #in-contact .contents .table-type1 .center{
+        text-align: center;
+    }
+    #in-contact .contents .table-type1 .description{
+        font-size: 18px;
+        font-weight: 500;
+        color: #07bde5;
+    }
+    #in-contact .contents .table-type1 .data-source{
+        font-size: 17px;
+        color: #171717;
+    }
+    #in-contact .contents .table-type1 .date{
+        font-size: 14px;
+        color: #4d4d4d;
+    }
+    #in-contact .contents .table-type1 .download{
+        font-size: 16px;
+        color: #ffffff;
+    }
+    #in-contact .contents .table-type1 .download button{
+        width: 80%;
+        padding: 5px;
+    }
+
+    #in-contact .contents .table-type1 .even{
+        background: #f6fbff;
+    }
+    #in-contact .contents .table-type1 .odd{
+        background: #fff;
+    }
+
+
+
+
+
+
     #in-contact .contents p {
         color: #1c3458;
         font-size: 18px;
@@ -65,13 +214,7 @@
         resize: none;
     }
 
-    #in-contact .btn-mcolor-green {
-        background: #8ac239;
-        color: #fff;
-        font-size: 16px;
-        padding: 5px 20px 5px 20px;
-        margin: 10px 0px 10px 10px;
-    }
+    
 
     #in-contact .width-full {
         width: 100%;
