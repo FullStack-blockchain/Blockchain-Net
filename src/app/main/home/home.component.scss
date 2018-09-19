@@ -360,39 +360,100 @@
         padding: 0px 13.86% 0px 13.86%;
         width: 100%;
     }
-    #in-help .help-row {
-        padding: 80px 0px 80px 0px;
-    }
 
     #in-help .help-left {
-        padding: 0px 100px 0px 0px;
+        padding: 0px 100px 30px 0px;
     }
     #in-help .help-left h1{
         color: #2a4055;
         font-size: 47px;
         margin: 0px;
         padding:0px;
+        text-align: left;
+        font-family: "ProximaNovaSoft-Regular";
     }
     #in-help .help-left p{
         color: #1b1b1b;
         font-size: 19px;
-        line-height: 1.7
+        line-height: 1.7;
+        text-align: left;
+        font-family: "AdelleSans-Light";
     }
-
-    #in-help .name {
-        padding-left: 20px;
+    @media (min-width: 1280px) {
+        #in-help {
+            padding: 0px 13.86% 0px 13.86%;
+        }
+        #in-help .help-left {
+            padding: 0px 100px 30px 0px;
+        }
+        #in-help .help-left h1{
+            text-align: left;
+        }
+        #in-help .help-left p{
+            text-align: left;
+        }
+    }
+    @media (max-width: 1280px) {
+        #in-help {
+            padding: 0px 5% 0px 5%;
+        }
+        #in-help .help-left {
+            padding: 0px 0px 30px 0px;
+        }
+        #in-help .help-left h1{
+            text-align: center;
+        }
+        #in-help .help-left p{
+            text-align: center;
+        }
+    }
+    #in-help .help-icon-img img{
+        margin: 0px;
     }
     #in-help .help-right h1 {
         font-size: 23px;
         color: #000;
         padding: 0px;
         margin: 0px;
+        font-family: "AdelleSans-SemiBold";
     }
     #in-help .help-right p {
         font-size: 17px;
         color: #595959;
         line-height: 1.5;
         margin: 0px 0px 50px 0px;
+        font-family: "AdelleSans-Light";
+    }
+    @media (min-width: 970px) {
+        #in-help .help-icon-img {
+            width: auto;
+            text-align: left;
+        }
+        #in-help .name {
+            padding-left: 20px;
+            text-align: left;
+        }
+        #in-help .help-right h1 {
+            margin: 0px;
+        }
+    }
+    @media (max-width: 970px) {
+        #in-help .help-icon-img {
+            width: 100%;
+            text-align: center;
+        }
+        #in-help .name {
+            padding-left: 0px;
+            text-align: center;
+        }
+        #in-help .help-right h1 {
+            margin: 20px 0px;
+        }
+    }
+
+    
+    #in-help .help-row {
+        padding: 80px 0px 80px 0px;
     }
 
     #in-health {
@@ -401,12 +462,29 @@
         background-size: 100% 100%;
 
         padding: 0px 0px 80px 0px;
+        z-index: -2;
+        position: relative;
+    }
+
+    #in-health .health-woman {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto auto 0;
     }
     #in-health .title{
         color: #fff;
         font-size: 54px;
         margin: 60px;
         text-align: center;
+        font-family: "ProximaNovaSoft-Regular";
     }
 
     #in-health .contents{
@@ -417,27 +495,150 @@
     #in-health .contents h1{ 
         color: #fff;
         font-size: 27px;
+        font-family: "ProximaNovaSoft-Bold";
+        margin: 12px 0px;
+        display:table-cell; vertical-align:middle
     }
+
     #in-health .contents p{
         color: #fff;
         font-size: 19px;
         padding: 0px;
         margin: 0px;
-        line-height: 1.5
+        line-height: 1.5;
+        font-family: "AdelleSans-Light";
     }
     #in-health .contents .img-link{
         position: absolute;
         left: 8.3%;
     }
-    #in-health .contents .img-link hr{
-        position: absolute;
-        width: 0px;
-        height: 350px;
-        border: 1px solid #ffffff26;
-        left: 50%;
+
+    @media (min-width: 1700px) {
+        #in-health .contents .img-link hr{
+            height: 400px;
+        }
+        #in-health .contents-item{
+            max-width: 60% !important;
+        }
+    }
+    @media (min-width: 1580px) and (max-width: 1700px) {
+        #in-health .contents .img-link hr{
+            height: 350px;
+        }
+    }
+    @media (min-width: 1280px) and (max-width: 1700px) {
+        #in-health .contents-item{
+            max-width: 75% !important;
+        }
+    }
+    @media (min-width: 1230px) and (max-width: 1580px) {
+        #in-health .contents .img-link hr{
+            height: 420px;
+        }
+    }
+    @media (min-width: 1024px) and (max-width: 1230px) {
+        #in-health .contents .img-link hr{
+            height: 480px;
+        }
+    }
+    @media (min-width: 980px) and (max-width: 1024px) {
+        #in-health .contents .img-link hr{
+            height: 460px;
+        }
+    }
+    @media (min-width: 890px) and (max-width: 980px) {
+        #in-health .contents .img-link hr{
+            height: 500px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 890px) {
+        #in-health .contents .img-link hr{
+            height: 560px;
+        }
+    }
+
+    @media (min-width: 1600px) {
+        #in-health .contents .img-link{
+            left: 8.3%;
+        }
+    }
+    @media (min-width: 1440px) and (max-width: 1600px) {
+        #in-health .contents .img-link{
+            left: 7.1%;
+        }
+    }
+    @media (min-width: 1280px) and (max-width: 1440px) {
+        #in-health .contents .img-link{
+            left: 6.3%;
+        }
+    }
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        #in-health .contents .img-link{
+            left: 5.3%;
+        }
+        #in-health .contents-item{
+            max-width: 80% !important;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        #in-health .contents .img-link{
+            left: 2.3%;
+        }
+        #in-health .contents-item{
+            max-width: 90% !important;
+        }
+    }
+
+    @media (min-width: 768px) {
+        #in-health .less-768{
+            display: none !important;
+        }
+        #in-health .contents{
+            padding: 0px 13.86% 0px 13.86%;
+        }
+        #in-health .large-768{
+            display: flex !important;
+        }
+    }
+    @media (max-width: 768px) {
+        #in-health .less-768{
+            display: flex !important;
+            margin: 30px 0px;
+        }
+        #in-health .contents{
+            padding: 0px 5% 0px 5%;
+        }
+        #in-health .large-768{
+            display: none !important;
+        }
+        #in-health .contents h1{
+            margin: 0px 10px;
+            line-height: 1.2;
+        }
+    }
+    @media (max-width: 400px) {
+        #in-health .contents h1{
+            font-size: 21px;
+        }
+    }
+    #in-health .contents .title-mobile{
+        display: table; height: 64px; margin: 0px 15px;
+    }
+    #in-health .contents .img-link-mobile img{
+        z-index: 500;
+        width: 64px;
+        height: 64px;
     }
     #in-health .contents .img-link img{
         z-index: 500;
+        width: 64px;
+        height: 64px;
+    }
+    #in-health .contents .img-link hr{
+        position: absolute;
+        width: 0px;
+        border: 1px solid #ffffff26;
+        left: 50%;
     }
     
     #in-block{
@@ -450,10 +651,26 @@
     #in-block .big-title{
         color: #fff;
         font-size: 47px;
+        text-align: center;
+        font-family: "ProximaNovaSoft-Regular";
+        width: 88%;
+    }
+    @media (min-width: 568px) {
+        #in-block .big-title{
+            font-size: 47px;
+        }
+    }
+    @media (max-width: 568px) {
+        #in-block .big-title{
+            font-size: 33px;
+        }
     }
     #in-block .small-title{
         color: #fff;
         font-size: 19px;
+        text-align: center;
+        font-family: "AdelleSans-Light";
+        width: 88%;
     }
 
     #in-block .contents{
@@ -467,10 +684,12 @@
     #in-block .contents .content-items h1{
         color: #fff;
         font-size: 24px;
+        font-family: "ProximaNovaSoft-Bold";
     }
     #in-block .contents .content-items p{
         color: #fff;
         font-size: 19px;
+        font-family: "AdelleSans-Light";
     }
 
     #in-contact{
@@ -480,6 +699,7 @@
     #in-contact .title{
         color: #000;
         font-size: 42px;
+        font-family: "ProximaNovaSoft-Regular";
     }
 
     #in-contact .contents{
@@ -489,6 +709,34 @@
     #in-contact .contents .content-items{
         margin-left: 20px;
     }
+    @media (min-width: 890px) {
+        #in-contact .contents{
+            width: 72.3%;
+            padding: 50px;
+        }
+        #in-contact .contents .content-items{
+            margin-left: 20px;
+        }
+    }
+    @media (min-width: 480px) and (max-width: 890px) {
+        #in-contact .contents{
+            width: 72.3%;
+            padding: 0px;
+        }
+        #in-contact .contents .content-items{
+            margin: 0px;
+        }
+    }
+    @media (max-width: 480px) {
+        #in-contact .contents{
+            width: 88%;
+            padding: 0px;
+        }
+        #in-contact .contents .content-items{
+            margin: 0px;
+        }
+    }
+    
     #in-contact .contents input{
         color: #000;
         background: #f7f7f7;
@@ -499,6 +747,7 @@
         padding: 10px;
         margin-right: 10px;
         width: 100%;
+        font-family: "ProximaNovaSoft-Bold";
     }
     #in-contact .contents textarea{
         color: #000;
@@ -512,11 +761,13 @@
         width: 100%;
         height: 200px;
         resize: none;
+        font-family: "ProximaNovaSoft-Bold";
     }
 
     #in-contact .contents p {
         color: #3d3d3d;
         font-size: 15px;
+        font-family: "ProximaNovaSoft-Bold";
     }
 
     #in-contact .btn-mcolor-green {
@@ -525,6 +776,7 @@
         font-size: 16px;
         padding: 5px 20px 5px 20px;
         margin: 10px 0px 10px 10px;
+        font-family: "ProximaNovaSoft-Bold";
     }
 
     
