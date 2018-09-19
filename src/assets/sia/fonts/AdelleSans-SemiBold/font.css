@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'AdelleSans-SemiBold';
+  src: url('AdelleSans-SemiBold.eot');
+  src: url('AdelleSans-SemiBold.woff2') format('woff2'),
+       url('AdelleSans-SemiBold.woff') format('woff'),
+       url('AdelleSans-SemiBold.ttf') format('truetype'),
+       url('AdelleSans-SemiBold.svg#AdelleSans-SemiBold') format('svg'),
+       url('AdelleSans-SemiBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'AdelleSans-Bold';
+  src: url('AdelleSans-Bold.eot');
+  src: url('AdelleSans-Bold.woff2') format('woff2'),
+       url('AdelleSans-Bold.woff') format('woff'),
+       url('AdelleSans-Bold.ttf') format('truetype'),
+       url('AdelleSans-Bold.svg#AdelleSans-Bold') format('svg'),
+       url('AdelleSans-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

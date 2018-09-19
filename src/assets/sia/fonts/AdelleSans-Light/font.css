@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'AdelleSans-Light';
+  src: url('AdelleSans-Light.eot');
+  src: url('AdelleSans-Light.woff2') format('woff2'),
+       url('AdelleSans-Light.woff') format('woff'),
+       url('AdelleSans-Light.ttf') format('truetype'),
+       url('AdelleSans-Light.svg#AdelleSans-Light') format('svg'),
+       url('AdelleSans-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

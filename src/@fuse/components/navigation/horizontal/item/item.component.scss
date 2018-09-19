@@ -2,14 +2,36 @@
 	.nav-link{
 		height: 126px !important;
 	}
+	@media (min-width: 1660px) {
+      	.nav-link{
+			padding: 0px 24px;
+		}
+    }
+    @media (min-width: 1440px) and (max-width: 1660px){
+      	.nav-link{
+			padding: 0px 24px;
+		}
+    }
+    @media (min-width: 1280px) and (max-width: 1440px){
+      	.nav-link{
+			padding: 0px 10px;
+		}
+    }
+    @media (min-width: 1024px) and (max-width: 1280px){
+      	.nav-link{
+			padding: 0px 8px;
+		}
+    }
+
 	.board-list-item {
 		text-align: center;
 	}
 	.board-name{
 		color: #124041;
-		font-weight: bold;
-		margin-top: 10px;
+		margin-top: 0px;
 		font-size: 14px;
+		font-family: "ProximaNovaSoft-Bold";
+		letter-spacing: 1px;
 	}
 	.nav-board-item{
 		color: #504f4f;

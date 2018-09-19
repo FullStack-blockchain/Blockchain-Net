@@ -27,7 +27,12 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "src/styles.scss"
+                            "src/styles.scss",
+                            "src/assets/sia/fonts/AdelleSans-Bold/font.css",
+                            "src/assets/sia/fonts/AdelleSans-Light/font.css",
+                            "src/assets/sia/fonts/AdelleSans-SemiBold/font.css",
+                            "src/assets/sia/fonts/ProximaNovaSoft-Bold/font.css",
+                            "src/assets/sia/fonts/ProximaNovaSoft-Regular/font.css"
                         ],
                         "scripts": []
                     },
