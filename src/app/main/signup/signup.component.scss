@@ -23,20 +23,21 @@
         color: #000;
         font-size: 52px;
         margin: 10px 0px 10px 0px;
+        font-family: "ProximaNovaSoft-Regular";
     }
     #in-contact .contents p {
         color: #1c3458;
         font-size: 13px;
-        font-weight: bold;
+        font-family: "ProximaNovaSoft-Bold";
     }
     #in-contact .contents h6 {
         font-size: 15px;
         color: #1c3458;
-        margin: 0px 0px 0px 27px
+        margin: 0px 0px 0px 27px;
+        font-family: "ProximaNovaSoft-Regular";
     }
     #in-contact .chk-know{
-        font-size: 15px;
-        color: #1c3458;
+        position: absolute;
     }
     #in-contact .chk-div{
         margin: 40px 0px;
@@ -65,6 +66,7 @@
         font-size: 16px;
         padding: 5px 20px 5px 20px;
         margin: 10px 0px 10px 10px;
+        font-family: "ProximaNovaSoft-Bold";
     }
     #in-contact .width-full {
         width: 100%;
@@ -78,11 +80,40 @@
         text-decoration: none;
         color: #8ac239;
         font-size: 16px;
+        font-family: "ProximaNovaSoft-Regular";
     }
     #in-contact .login-div h5{
         font-size: 16px;
         color: #131313;
         margin: 0px;
+        font-family: "ProximaNovaSoft-Regular";
+    }
+    @media (min-width: 1280px) {
+        #in-contact .contents{
+            width: 60.25%;
+            padding: 20px;
+            margin: 80px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1280px){
+        #in-contact .contents{
+            width: 60.25%;
+            padding: 20px;
+            margin: 80px;
+        }
+        #in-contact .contents .content-items{
+            width: 90%;
+        }
+    }
+    @media (max-width: 768px){
+        #in-contact .contents{
+            width: 90%;
+            padding: 20px;
+            margin: 50px 0px;
+        }
+        #in-contact .contents .content-items{
+            width: 90%;
+        }
     }
 
 

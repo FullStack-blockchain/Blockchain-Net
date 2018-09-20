@@ -28,16 +28,13 @@
         width: 72.3%;
         border-bottom: 1px dashed #686871;
     }
-    #in-footer .contents .link-item{
-        
-    }
 
     #in-footer .contents .link-url{
         padding: 50px 0px 50px 0px;
         text-align: right;
     }
 
-    #in-footer .contents .link-url .link-url-item{
+    #in-footer .contents .link-url-item{
         color: #81818e;
         font-size: 16px;
         font-weight: bold;
@@ -45,8 +42,82 @@
         cursor: pointer;
         margin: 0px 0px 0px 60px;
     }
+    #in-footer .less-600{
+        display: none !important;
+        padding: 20px 0px;
+    }
+    #in-footer .large-600{
+        display: flex !important;
+    }
+    
+    @media (min-width: 1280px) and (max-width: 1440px){
+        #in-footer .contents .link-url-item{
+            margin: 0px 30px 0px 0px;
+        }
+        #in-footer .contents .link-item{
+            width: 100%;
+        }
+        #in-footer .contents .link-url{
+            width: 100%;
+            text-align: left;
+            padding: 50px 0px 50px 0px;
+        }
+        #in-footer .less-600{
+            display: none !important;
+        }
+        #in-footer .large-600{
+            display: flex !important;
+        }
+    }
 
-    #in-footer .contents .link-url .actived{
+    @media (min-width: 650px) and (max-width: 1280px){
+        #in-footer .contents .link-url-item{
+            margin: 0px 30px 0px 0px;
+        }
+        #in-footer .contents .link-item{
+            width: 100%;
+            margin: 40px 0px;
+        }
+        #in-footer .contents .link-url{
+            width: 100%;
+            text-align: left;
+            padding: 0px 0px 50px 0px;
+        }
+        #in-footer .less-600{
+            display: none !important;
+        }
+        #in-footer .large-600{
+            display: flex !important;
+        }
+    }
+
+    @media (max-width: 650px){
+        #in-footer .contents .link-url-item{
+            margin: 0px 30px 0px 0px;
+        }
+        #in-footer .contents .link-item{
+            width: 100%;
+            margin: 40px 0px;
+        }
+        #in-footer .contents .link-url{
+            width: 100%;
+            text-align: left;
+            padding: 0px 0px 50px 0px;
+        }
+        #in-footer .less-600{
+            display: block !important;
+        }
+        #in-footer .large-600{
+            display: none !important;
+        }
+    }
+
+    #in-footer .link-url-less-item{
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+    #in-footer .contents .actived{
         color: #fff;
     }
 

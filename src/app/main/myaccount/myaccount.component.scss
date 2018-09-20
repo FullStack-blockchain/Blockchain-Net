@@ -89,12 +89,15 @@
     }
     #in-contact .contents .table-title .right{
         text-align: right;
+        display: flex;
     }
     #in-contact .contents .table-title a{
         color: #8ac239;
         font-size: 16px;
         font-weight: bold;
         margin: 5px 0px;
+        width: 100%;
+        text-align: right;
     }
 
     #in-contact .contents .table-type1{
@@ -151,6 +154,12 @@
         font-weight: 500;
         color: #07bde5;
     }
+    #in-contact .contents .table-type1 .download-href{
+        font-size: 18px;
+        color: #1cb0e3;
+        font-family: "ProximaNovaSoft-Regular";
+        margin: 0px 10px;
+    }
     #in-contact .contents .table-type1 .data-source{
         font-size: 17px;
         color: #171717;
@@ -204,5 +213,282 @@
         color: #4d4d4d;
         font-weight: bold;
         margin: 10px 0px;
+    }
+    #in-contact .contents .table-body {
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+    }
+    #in-contact .contents .table-body .content-items {
+        width: 100%;
+    }
+    #in-contact .col-footer-left .first-row .title{
+        width:100%; padding: 0px 20px;
+    }
+    #in-contact .col-footer-left .first-row .title h1{
+        font-size: 27px
+    }
+    #in-contact .col-footer-left .first-row .img{
+        width:100%; text-align: right; padding: 20px;
+    }
+    #in-contact .col-footer-left .sth-btn{
+        width: 100%; padding: 20px;
+    }
+    #in-contact .col-footer-left .sth-content{
+        font-size: 16px;
+    }
+    #in-contact .col-footer-left .fourth-title{
+        margin: 48px;
+    }
+    #in-contact .col-footer-left .third-btn1{
+        margin-right: 10px;
+    }
+    #in-contact .col-footer-left .third-btn2{
+        margin: 0px 5px;
+    }
+    #in-contact .col-footer-left .third-btn3{
+        margin-left: 10px;
+    }
+    #in-contact .last-less-1280 .right-panel-left{
+        max-width: 75%;
+    }
+    #in-contact .last-less-1280 .right-panel-right{
+        max-width: 25%;
+    }
+    @media (min-width: 768px){
+        #in-contact .last-less-1280 .right-panel-left{
+            max-width: 75% !important;
+        }
+        #in-contact .last-less-1280 .right-panel-right{
+            max-width: 25% !important;
+        }
+    }
+    @media (min-width: 550px) and (max-width: 768px){
+        #in-contact .col-footer-left .sth-btn{
+            padding: 10px;
+        }
+        #in-contact .col-footer-left .sth-btn button{
+            font-size: 9.71px;
+            min-width: 80px;
+            padding: 0px 10px;
+        }
+        #in-contact .col-footer-left .left-content .left-content-btna {
+            padding: 20px 10px;
+        }
+        #in-contact .col-footer-left .left-content .left-content-btna button{
+            width: 100%;
+            min-width: 80px;
+            font-size: 10.42px;
+            padding: 0px 5px;
+        }
+        #in-contact .col-footer-left .right-h2 {
+            font-size: 13px;
+            margin: 10px 0px 10px 20px;
+        }
+        #in-contact .col-footer-left .right-date{
+            font-size: 13px;
+            margin: 10px 0px;
+        }
+        #in-contact .last-less-1280 .right-panel-left{
+            max-width: 70% !important;
+        }
+        #in-contact .last-less-1280 .right-panel-right{
+            max-width: 30% !important;
+        }
+        #in-contact .col-footer-left .first-row .title h1{
+            font-size: 18px;
+        }
+    }
+    @media (min-width: 550px){
+        #in-title .big-title{
+            margin: 55px;
+        }
+        #in-title .big-title h1{
+            font-size: 72px;
+        }
+    }
+    @media (max-width: 550px){
+        #in-title .big-title{
+            margin: 32px 0px;
+        }
+        #in-title .big-title h1{
+            font-size: 42px;
+        }
+        #in-contact .contents {
+            width: 90%;
+            padding: 20px 0px;
+        }
+        #in-contact .contents .table-title{
+            margin: 20px auto;
+            width: 90%;
+        }
+        #in-contact .contents .table-title .right{
+            display: none !important;
+        }
+
+        #in-contact .contents .table-body {
+            width: 90%;
+            margin: 10px auto;
+        }
+        #in-contact .col-footer-left .first-row .title h1{
+            font-size: 15.48px;
+        }
+
+        #in-contact .last-less-1280{
+            width: 90%;
+            margin: auto;
+        }
+        #in-contact .last-less-1280 .right-panel{
+            margin: 30px 0px;
+        }
+        #in-contact .col-footer-left .sth-btn{
+            padding: 10px;
+        }
+        #in-contact .col-footer-left .sth-btn button{
+            font-size: 9.71px;
+            min-width: 80px;
+            padding: 0px 10px;
+        }
+        #in-contact .col-footer-left .sth-content{
+            font-size: 10.37px;
+        }
+        #in-contact .col-footer-left .fourth-title{
+            margin: 20px 10px;
+            font-size: 12.95px !important;
+        }
+
+        #in-contact .col-footer-left .left-content .left-content-btna {
+            padding: 20px 10px;
+        }
+        #in-contact .col-footer-left .left-content .left-content-btna button{
+            width: 100%;
+            min-width: 70px;
+            font-size: 8.42px;
+        }
+        #in-contact .last-less-1280 .right-panel-left{
+            max-width: 70% !important;
+        }
+        #in-contact .last-less-1280 .right-panel-right{
+            max-width: 30% !important;
+        }
+        #in-contact .col-footer-left .right-h2 {
+            font-size: 10px;
+            margin: 10px 0px 10px 20px;
+        }
+        #in-contact .col-footer-left .right-date{
+            font-size: 10px;
+            margin: 10px 0px;
+        }
+    }
+    #in-contact .wallet-large-1280{
+        display: flex;
+    }
+    #in-contact .wallet-less-1280{
+        display: none;
+        width: 90%;
+        margin: auto;
+    }
+    #in-contact .wallet-less-1280 .wallet-less-btn{
+        width: 100%;
+    }
+    #in-contact .contents .wallet-less-1280 .button-item{
+        width: 100%;
+        padding: 5px 30px;
+    }
+    #in-contact .contents .wallet-less-1280 .button-item button{
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+    }
+    #in-contact .contents .less-logo-img{
+        border-top: 1px solid #e4e4e4;
+        border-left: 1px solid #e4e4e4;
+        border-right: 1px solid #e4e4e4;
+        border-radius: 5px 5px 0px 0px;
+        padding: 20px 0px;
+    }
+    #in-contact .contents .less-user-wallet{
+        border: 1px solid #e4e4e4;
+        background: #fafafb;
+    }
+    #in-contact .contents .less-user-chart{
+        border-left: 1px solid #e4e4e4;
+        border-right: 1px solid #e4e4e4;
+    }
+    #in-contact .contents .less-btn1{
+        border-left: 1px solid #e4e4e4;
+        border-right: 1px solid #e4e4e4;
+    }
+    #in-contact .contents .less-btn2{
+        border-left: 1px solid #e4e4e4;
+        border-right: 1px solid #e4e4e4;
+    }
+    #in-contact .contents .less-btn3{
+        border-left: 1px solid #e4e4e4;
+        border-right: 1px solid #e4e4e4;
+    }
+    #in-contact .contents .less-btn4{
+        border-left: 1px solid #e4e4e4;
+        border-right: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+        border-radius: 0px 0px 5px 5px;
+        padding-bottom: 20px;
+    }
+
+    @media (min-width: 1280px){
+        #in-contact .wallet-large-1280{
+            display: flex !important;
+        }
+        #in-contact .wallet-less-1280{
+            display: none !important;
+        }
+        #in-contact .last-large-1280{
+            display: flex !important;
+        }
+        #in-contact .last-less-1280{
+            display: none !important;
+        }
+    }
+    @media (max-width: 1280px){
+        #in-contact .wallet-large-1280{
+            display: none !important;
+        }
+        #in-contact .wallet-less-1280{
+            display: flex !important;
+        }
+        #in-contact .last-large-1280{
+            display: none !important;
+        }
+        #in-contact .last-less-1280{
+            display: flex !important;
+        }
+        #in-contact .last-less-1280 .content-items{
+            width: 100%;
+        }
+        #in-contact .last-less-1280 .content-items .col-footer-left{
+            margin: 0px;
+        }
+    }
+
+    @media (min-width: 820px){
+        #in-contact .contents .table-title .right{
+            display: flex !important;
+        }
+        #in-contact .table1-large-820{
+            display: flex !important;
+        }
+        #in-contact .table1-less-820{
+            display: none !important;
+        }
+    }
+    @media (max-width: 820px){
+        #in-contact .contents .table-title .right{
+            display: none !important;
+        }
+        #in-contact .table1-large-820{
+            display: none !important;
+        }
+        #in-contact .table1-less-820{
+            display: flex !important;
+        }
     }
 }

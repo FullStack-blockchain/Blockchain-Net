@@ -18,6 +18,7 @@
         margin:0px;
         padding:0px;
         color: #fff;
+        font-family: "ProximaNovaSoft-Regular";
     }
     #in-contact{
         background: #f4f5f7;
@@ -34,10 +35,54 @@
     #in-contact .contents p {
         color: #1c3458;
         font-size: 18px;
-        font-weight: bold;
+        font-family: "ProximaNovaSoft-Bold";
     }
     #in-contact .contents .content-items{
         margin-left: 20px;
+    }
+    #in-contact .btn-addmore {
+        width: 30%;
+        margin: 30px;
+        font-family: "ProximaNovaSoft-Bold";
+    }
+    @media (min-width: 1280px) {
+        #in-contact .contents .large-1280{
+            display: flex !important;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1280px){
+        #in-contact .contents .large-1280{
+            display: none !important;
+        }
+        #in-contact .contents .content-items{
+            width: 90%;
+        }
+        #in-contact .btn-addmore {
+            width: 100%;
+            margin: 30px 0px;
+        }
+    }
+    @media (max-width: 768px){
+        #in-contact .contents .large-1280{
+            display: none !important;
+        }
+        #in-contact .contents .content-items{
+            width: 90%;
+        }
+        #in-contact .btn-addmore {
+            width: 100%;
+            margin: 25px 0px !important;
+        }
+        #in-contact .contents{
+            width: 90%;
+            padding: 10px;
+        }
+        #in-title .big-title h1{
+            font-size: 52px;
+        }
+        #in-title .big-title{
+            margin: 20px;
+        }
     }
     #in-contact .contents .abtxt {
         color: #000;
@@ -71,6 +116,7 @@
         font-size: 16px;
         padding: 5px 20px 5px 20px;
         margin: 10px 0px 10px 10px;
+        font-family: "ProximaNovaSoft-Bold";
     }
 
     #in-contact .width-full {
@@ -78,14 +124,9 @@
         margin: 20px 0px 20px 0px;
     }
 
-    #in-contact .btn-addmore {
-        width: 30%;
-        margin: 30px;
-    }
-
     #in-contact .chk-know{
         font-size: 13px;
         color: #1c3458;
-        fotn-weight: bold;
+        font-family: "ProximaNovaSoft-Bold";
     }
 }
