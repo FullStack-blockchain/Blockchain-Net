@@ -1,5 +1,5 @@
 :host {
-
+    ::ng-deep .ngx-charts { text { fill: #3bcd9c !important; } }
     #in-title {
         background: url("../../../assets/sia/images/banners/banner_bg.jpg");
         background-repeat: no-repeat;
@@ -47,6 +47,12 @@
     #in-contact .contents .mat-grid .mat-grid-chart-row {
         width: 100%;
     }
+    #in-contact .contents .mat-grid-chart-row-left{
+        max-width: 40% !important;
+        padding: 50px !important;
+    }
+     
+
     #in-contact .contents .mat-grid-chart-row-right-button{
         width: 100%;
         text-align: right;
@@ -305,6 +311,11 @@
         #in-title .big-title h1{
             font-size: 72px;
         }
+        #in-contact .contents .mat-grid-chart-row-left-small{
+            max-width: 70% !important;
+            max-height: 500px !important;
+            padding: 20px !important;
+        }   
     }
     @media (max-width: 550px){
         #in-title .big-title{
@@ -377,6 +388,10 @@
         #in-contact .col-footer-left .right-date{
             font-size: 10px;
             margin: 10px 0px;
+        }
+        in-contact .contents .mat-grid-chart-row-left-small{
+            max-height: 300px !important;
+            padding: 10px !important;
         }
     }
     #in-contact .wallet-large-1280{

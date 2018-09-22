@@ -16,6 +16,18 @@ import { locale as turkish } from './i18n/tr';
 export class MyaccountComponent implements OnInit {
     gray_color :String;
     white_color :String;
+    ntotal = 325400;
+    single : any[] = [
+      {
+            name  : 'EHR',
+            value : 126400
+        }
+    ];
+    colorScheme = {
+        domain: ['#00b0e0', '#A10A28', '#C7B42C', '#AAAAAA']
+    };
+    view: any[] = [700, 400];
+
 	/**
      * Constructor
      *

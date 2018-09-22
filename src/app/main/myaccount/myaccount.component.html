@@ -21,7 +21,11 @@
                       <mat-grid-tile [colspan]="2" [rowspan]="4" [style.background]="white_color">
                         <div class="mat-grid-chart-row" fxLayout="column" fxLayout.gt-md="row"  fxLayoutAlign="center center">
                             <div class="mat-grid-chart-row-left" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
-                                chart
+                                <ngx-charts-pie-grid
+                                    [designatedTotal]="ntotal"
+                                    [scheme]="colorScheme"
+                                    [results]="single" >
+                                </ngx-charts-pie-grid>
                             </div>
                             <div class="mat-grid-chart-row-right" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
                                 <div class="mat-grid-chart-row-right-button" fxLayout="column" fxLayoutAlign="center left">
@@ -63,8 +67,12 @@
                 </div>
             </div>
             <div class="wallet-less-1280 less-user-chart" fxLayout="column" fxLayout.gt-md="row" fxLayoutAlign="center center">
-                <div class="" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
-                    <h1>Chart</h1>
+                <div class="mat-grid-chart-row-left-small" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
+                    <ngx-charts-pie-grid
+                        [designatedTotal]="ntotal"
+                        [scheme]="colorScheme"
+                        [results]="single" >
+                    </ngx-charts-pie-grid>
                 </div>
             </div>
             <div class="wallet-less-1280 less-btn1" fxLayout="column" fxLayout.gt-md="row" fxLayoutAlign="center center">

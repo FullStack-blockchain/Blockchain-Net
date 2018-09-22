@@ -6,6 +6,7 @@ import { FuseSharedModule } from '@fuse/shared.module';
 
 import { MyaccountComponent } from './myaccount.component';
 import { MatButtonModule, MatIconModule, MatCheckboxModule, MatGridListModule } from '@angular/material';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 const routes = [
     {
@@ -25,6 +26,7 @@ const routes = [
         MatIconModule,
         MatCheckboxModule,
         MatGridListModule,
+        NgxChartsModule,
 
         TranslateModule,
 
