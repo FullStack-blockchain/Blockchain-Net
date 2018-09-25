@@ -24,7 +24,12 @@ export class BlogComponent implements OnInit {
         this._fuseTranslationLoaderService.loadTranslations(english, turkish);
     }
 
-	ngOnInit() {
-	}
+    ngOnInit() {
+    }
+
+    scroll(el) {
+        console.log(el);
+        el.scrollIntoView();
+    }
 
 }

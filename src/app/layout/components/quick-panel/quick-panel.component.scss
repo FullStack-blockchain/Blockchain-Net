@@ -9,4 +9,16 @@ quick-panel {
     .mat-slide-toggle-content {
         flex: 1;
     }
+
+    .mp-menu {
+    	color: #124041;
+    }
+    .mp-menu .mp-icon {
+    	font-size: 14px !important;
+    	margin-right: 20px !important;
+    }
+    .mp-menu .mp-title {
+    	font-family: "ProximaNovaSoft-Bold";
+    	font-size: 18px;
+    }
 }

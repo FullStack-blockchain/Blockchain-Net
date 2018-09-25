@@ -3,6 +3,7 @@ import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
 import { FuseNavigationService } from '@fuse/components/navigation/navigation.service';
+import { FuseSidebarService } from '@fuse/components/sidebar/sidebar.service';
 
 @Component({
     selector     : 'fuse-navigation',
@@ -23,9 +24,13 @@ export class FuseNavigationComponent implements OnInit
 
     /**
      * Constructor
+     *
+     * @param {FuseSidebarService} _fuseSidebarService
+     *
      */
     constructor(
-        private _fuseNavigationService: FuseNavigationService
+        private _fuseNavigationService: FuseNavigationService,
+        private _fuseSidebarService: FuseSidebarService
     )
     {
         // Set the private defaults
@@ -50,5 +55,14 @@ export class FuseNavigationComponent implements OnInit
             .subscribe(() => {
                 this.navigation = this._fuseNavigationService.getCurrentNavigation();
             });
+    }
+    /**
+     * Toggle sidebar open
+     *
+     * @param key
+     */
+    toggleSidebarOpen(key): void
+    {
+        this._fuseSidebarService.getSidebar(key).toggleOpen();
     }
 }

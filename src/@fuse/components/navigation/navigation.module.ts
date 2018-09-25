@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { MatIconModule, MatRippleModule, MatButtonModule } from '@angular/material';
+import { MatIconModule, MatRippleModule, MatButtonModule, MatMenuModule, MatToolbarModule } from '@angular/material';
 
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -20,6 +20,8 @@ import { FuseNavHorizontalCollapsableComponent } from './horizontal/collapsable/
         MatButtonModule,
         MatIconModule,
         MatRippleModule,
+        MatMenuModule,
+        MatToolbarModule,
 
         TranslateModule.forChild()
     ],
