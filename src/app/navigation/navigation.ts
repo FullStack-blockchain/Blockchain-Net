@@ -6,14 +6,14 @@ export const navigation: FuseNavigation[] = [
         title: 'ABOUT',
         type : 'item',
         icon : 'camera_front',
-        url  : '/about'
+        url  : '/home/about'
     },
     {
         id   : 'contact',
         title: 'CONTACT',
         type : 'item',
         icon : 'card_travel',
-        url  : '/signup'
+        url  : '/home/contact'
     },
     {
         id   : 'whitepaper',

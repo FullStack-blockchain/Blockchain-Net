@@ -11,6 +11,10 @@ const routes = [
     {
         path     : 'home',
         component: HomeComponent
+    },
+    {
+        path: "home/:id",
+        component: HomeComponent 
     }
 ];
 

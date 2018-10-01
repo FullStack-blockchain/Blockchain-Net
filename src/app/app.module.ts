@@ -30,10 +30,6 @@ const appRoutes: Routes = [
         redirectTo: 'home'
     },
     {
-        path      : 'about',
-        redirectTo: 'about'
-    },
-    {
         path      : 'blog',
         redirectTo: 'blog'
     },
@@ -48,7 +44,7 @@ const appRoutes: Routes = [
     {
         path      : 'myaccount',
         redirectTo: 'myaccount'
-    }
+    }   
 ];
 
 @NgModule({
