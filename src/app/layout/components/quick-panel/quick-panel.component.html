@@ -6,14 +6,29 @@
     </h3>
     <mat-list-item *ngFor="let item of navigation">
         <!-- item.url -->
-        <!--<a class="nav-link" [ngClass]="item.classes" *ngIf="item.url && !item.externalUrl && !item.function"
+        <!-- <a class="nav-link" [ngClass]="item.classes" *ngIf="item.url && !item.externalUrl && !item.function"
            [routerLink]="[item.url]" [routerLinkActive]="['active', 'mat-accent-bg']"
            [routerLinkActiveOptions]="{exact: item.exactMatch || false}"
            [target]="item.openInNewTab ? '_blank' : '_self'" matRipple>
-            <mat-icon class="nav-link-icon mat-icon material-icons ng-star-inserted">{{item.icon}}</mat-icon>
-            <span class="nav-link-title ng-star-inserted">{{item.title}}</span>
-        </a>-->
-        <a href="{{item.url}}" class="nav-link mp-menu" [ngClass]="item.classes" matRipple>
+            <ng-container *ngTemplateOutlet="itemContent"></ng-container>
+        </a> -->
+
+        <!-- item.externalUrl -->
+        <!-- <a class="nav-link" [ngClass]="item.classes" *ngIf="item.url && item.externalUrl && !item.function"
+           [href]="item.url" [target]="item.openInNewTab ? '_blank' : '_self'" matRipple>
+            <ng-container *ngTemplateOutlet="itemContent"></ng-container>
+        </a> -->
+
+        <a class="nav-link mp-menu" [ngClass]="item.classes" *ngIf="item.url && !item.externalUrl && !item.function"
+           [routerLink]="[item.url]" [routerLinkActive]="['active', 'mat-accent-bg']"
+           [routerLinkActiveOptions]="{exact: item.exactMatch || false}"
+           [target]="item.openInNewTab ? '_blank' : '_self'" matRipple>
+            <mat-icon class="nav-link-icon mat-icon material-icons ng-star-inserted mp-icon">{{item.icon}}</mat-icon>
+            <span class="nav-link-title ng-star-inserted mp-title">{{item.title}}</span>
+        </a>
+
+        <a class="nav-link mp-menu" [ngClass]="item.classes" *ngIf="item.url && item.externalUrl && !item.function"
+           [href]="item.url" [target]="item.openInNewTab ? '_blank' : '_self'" matRipple>
             <mat-icon class="nav-link-icon mat-icon material-icons ng-star-inserted mp-icon">{{item.icon}}</mat-icon>
             <span class="nav-link-title ng-star-inserted mp-title">{{item.title}}</span>
         </a>
