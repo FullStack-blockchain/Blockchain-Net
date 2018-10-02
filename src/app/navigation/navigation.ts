@@ -20,20 +20,23 @@ export const navigation: FuseNavigation[] = [
         title: 'WHITEPAPER',
         type : 'item',
         icon : 'whitepaper',
-        url  : '/whitepaper'
+        url  : 'https://github.com/Health-Port/White-Paper',
+        externalUrl : true
     },
     {
         id   : 'source-code',
         title: 'SOURCE CODE',
         type : 'item',
         icon : 'sourcecode',
-        url  : '/myaccount'
+        url  : 'https://github.com/Health-Port',
+        externalUrl : true
     },
     {
         id   : 'blog',
         title: 'BLOG',
         type : 'item',
         icon : 'blog',
-        url  : '/blog'
+        url  : 'https://medium.com/@healthport',
+        externalUrl : true
     }
 ];

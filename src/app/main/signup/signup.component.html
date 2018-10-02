@@ -19,7 +19,7 @@
                     <input class="abtxt" type="text" />
                 </div>
             </div>
-            <div fxLayout="column" fxLayout.gt-md="row">
+            <div class="pdwinput-div" fxLayout="column" fxLayout.gt-md="row">
                 <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
                     <p>PASSWORD</p>
                     <input class="abtxt" type="text" />
@@ -32,18 +32,32 @@
             <div class="chk-div" fxLayout="column" fxLayout.gt-md="row">
                 <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
                     <mat-checkbox class="chk-know" ></mat-checkbox>
-                    <h6>I certify that I am 18 years of age or older and I accept all Health Port <u>LEGAL NOTICES</u> including:</h6>
-                    <h6>Privacy Policy  Terms of Service  Terms of Use</h6>
+                    <h6> I certify that I am 18 years of age or older and I accept all Health Port <u>LEGAL NOTICES</u> including:</h6>
+                    <h6> Privacy Policy  Terms of Service  Terms of Use</h6>
                 </div>
             </div>
-            <div fxLayout="column" fxLayout.gt-md="row"  fxLayoutAlign="center center">
+            <div class="chk-div" fxLayout="column" fxLayout.gt-md="row">
+                <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
+                    <mat-checkbox class="chk-know" ></mat-checkbox>
+                    <h6> Please make the following all hyperlinks to their appropriate pages on the website:</h6>
+                </div>
+            </div>
+            <div class="chk-div" fxLayout="column" fxLayout.gt-md="row">
+                <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
+                    <h4>1.&nbsp;&nbsp;&nbsp;Health Port Legal Notices</h4>
+                    <h4>2.&nbsp;&nbsp;Privacy Policy</h4>
+                    <h4>3.&nbsp;&nbsp;Terms of Service</h4>
+                    <h4>4.&nbsp;&nbsp;Terms of Use</h4>
+                </div>
+            </div>
+            <div class="submitbtn-div" fxLayout="column" fxLayout.gt-md="row"  fxLayoutAlign="center center">
                 <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100" fxLayoutAlign="center center">
-                    <button mat-raised-button class="btn-mcolor-green width-full">CREATE ACCOUNT -></button>
+                    <button mat-raised-button class="btn-mcolor-green width-full">CREATE ACCOUNT  <mat-icon class="secondary-text s-16 mat-icon material-icons" style="color: #fff;">arrow_forward</mat-icon></button>
                 </div>
             </div>
             <div class="login-div" fxLayout="column" fxLayout.gt-md="row">
                 <div class="content-items" fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">
-                    <h5>Already have an account? <a href="/login">Login</a></h5>
+                    <h5>Already have an account? <a routerLink="/login">Login</a></h5>
                 </div>
             </div>
         </div>

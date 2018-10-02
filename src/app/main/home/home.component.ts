@@ -45,4 +45,8 @@ export class HomeComponent
             this.id = ""; this.ncount = 0;
         }
     }
+    scroll(el) {
+        console.log(el);
+        el.scrollIntoView();
+    }
 }

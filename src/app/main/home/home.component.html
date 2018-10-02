@@ -12,8 +12,8 @@
                     </h1>
 
                     <div>
-                        <button mat-raised-button class="btn-banner btn-gray">LEARN MORE</button>
-                        <button mat-raised-button class="btn-banner btn-trans">WHITE PAPER</button>
+                        <button (click)="scroll(target_health)" mat-raised-button class="btn-banner btn-gray">LEARN MORE</button>
+                        <a href="https://github.com/Health-Port/White-Paper" mat-raised-button class="btn-banner btn-trans">WHITE PAPER</a>
                     </div>
                 </div>
 
@@ -127,7 +127,7 @@
         </div>
     </div>
 
-    <div id="in-health" fxLayout="column" fxLayoutAlign="center left">
+    <div id="in-health" fxLayout="column" fxLayoutAlign="center left" #target_health>
         <img class="health-woman" src="assets/sia/images/healths/health_bottom.jpg" >
         <div class="title" fxLayout="column" fxLayout.gt-md="row">
             <div fxFlex="100" fxFlex.gt-xs="100" fxFlex.gt-sm="100">

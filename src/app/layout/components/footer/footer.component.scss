@@ -11,6 +11,12 @@
         height: 200px;
         margin-right: 1px;
     }
+    #in-link .link-item:hover{
+        cursor: pointer;
+    }
+    #in-link .link-item a{
+        text-decoration: none;
+    }
     #in-link .link-item img{
         margin-top: 50px;
     }
@@ -41,6 +47,9 @@
         text-decoration:none;
         cursor: pointer;
         margin: 0px 0px 0px 60px;
+    }
+    #in-footer .contents .link-url-item:hover{
+        color: #fff;
     }
     #in-footer .less-600{
         display: none !important;
