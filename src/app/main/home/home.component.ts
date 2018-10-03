@@ -5,7 +5,7 @@ import { FuseTranslationLoaderService } from '@fuse/services/translation-loader.
 import { locale as english } from './i18n/en';
 import { locale as turkish } from './i18n/tr';
 
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
     selector   : 'home',
@@ -23,14 +23,21 @@ export class HomeComponent
      */
     constructor(
         private meta: Meta,
+        private titleService:Title,
         private activatedRoute: ActivatedRoute,
         private _fuseTranslationLoaderService: FuseTranslationLoaderService
     )
     {
         this._fuseTranslationLoaderService.loadTranslations(english, turkish);
+
+        //this.titleService.setTitle("Health Port Blockchain Electronic Health Records (EHR)");
         this.meta.addTags([
           { name: 'robots', content: 'noindex' },
-          { name: 'Health Port Blockchain Electronic Health Records (EHR)', content: 'Health Port gives patientâ€™s control over storage and access to their personal Electronic Health Record (EHR) via leveraging blockchain technology.' }
+          { httpEquiv: 'Content-Type', content: 'text/html'},
+          { charset: 'UTF-8'},
+          { property: 'og:title', content: "Health Port Blockchain Electronic Health Records (EHR)"},
+          { name: 'description', content: 'Health Port gives patient’s control over storage and access to their personal Electronic Health Record (EHR) via leveraging blockchain technology.' },
+          { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'}
         ], true);
     }
 

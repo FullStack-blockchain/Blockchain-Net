@@ -5,6 +5,8 @@ import { FuseTranslationLoaderService } from '@fuse/services/translation-loader.
 import { locale as english } from './i18n/en';
 import { locale as turkish } from './i18n/tr';
 
+import { Meta, Title } from '@angular/platform-browser';
+
 @Component({
   selector: 'blog',
   templateUrl: './blog.component.html',
@@ -25,11 +27,22 @@ export class BlogComponent implements OnInit {
      * @param {FuseTranslationLoaderService} _fuseTranslationLoaderService
      */
     constructor(
+        private meta: Meta,
+        private titleService:Title,
         private activatedRoute: ActivatedRoute,
         private _fuseTranslationLoaderService: FuseTranslationLoaderService
     )
     {
         this._fuseTranslationLoaderService.loadTranslations(english, turkish);
+
+        this.meta.addTags([
+          { name: 'robots', content: 'noindex' },
+          { httpEquiv: 'Content-Type', content: 'text/html'},
+          { charset: 'UTF-8'},
+          { property: 'og:title', content: "Legal Notices from Health Port"},
+          { name: 'description', content: 'Review all legal notices prior to using Health Port to manage your personal electronic health record (EHR) on the blockchain' },
+          { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'}
+        ], true);
     }
 
     ngOnInit() {

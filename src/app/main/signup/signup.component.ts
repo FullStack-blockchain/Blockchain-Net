@@ -5,7 +5,7 @@ import { FuseTranslationLoaderService } from '@fuse/services/translation-loader.
 import { locale as english } from './i18n/en';
 import { locale as turkish } from './i18n/tr';
 
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'signup',
@@ -21,6 +21,7 @@ export class SignupComponent implements OnInit {
      */
     constructor(
         private meta: Meta,
+        private titleService:Title,
         private _fuseTranslationLoaderService: FuseTranslationLoaderService
     )
     {
@@ -28,7 +29,11 @@ export class SignupComponent implements OnInit {
 
         this.meta.addTags([
           { name: 'robots', content: 'noindex' },
-          { name: 'Sign Up for Health Port', content: ' Join Health Port to create and manage your personalized, decentralized electronic health record (EHR) on the blockchain.' }
+          { httpEquiv: 'Content-Type', content: 'text/html'},
+          { charset: 'UTF-8'},
+          { property: 'og:title', content: "Sign Up for Health Port"},
+          { name: 'description', content: 'Join Health Port to create and manage your personalized, decentralized electronic health record (EHR) on the blockchain.' },
+          { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'}
         ], true);
     }
 

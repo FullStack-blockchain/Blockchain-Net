@@ -5,6 +5,8 @@ import { FuseTranslationLoaderService } from '@fuse/services/translation-loader.
 import { locale as english } from './i18n/en';
 import { locale as turkish } from './i18n/tr';
 
+import { Meta, Title } from '@angular/platform-browser';
+
 @Component({
   selector: 'myaccount',
   templateUrl: './myaccount.component.html',
@@ -34,12 +36,23 @@ export class MyaccountComponent implements OnInit {
      * @param {FuseTranslationLoaderService} _fuseTranslationLoaderService
      */
     constructor(
+        private meta: Meta,
+        private titleService:Title,
         private _fuseTranslationLoaderService: FuseTranslationLoaderService
     )
     {
         this.gray_color = '#fafafb';
         this.white_color = '#fff';
         this._fuseTranslationLoaderService.loadTranslations(english, turkish);
+
+        this.meta.addTags([
+          { name: 'robots', content: 'noindex' },
+          { httpEquiv: 'Content-Type', content: 'text/html'},
+          { charset: 'UTF-8'},
+          { property: 'og:title', content: "User Dashboard on Health Port"},
+          { name: 'description', content: 'Manage your blockchain-based electronic health records (EHR) via the Health Port User Dashboard.' },
+          { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'}
+        ], true);
     }
 
   	ngOnInit() {
