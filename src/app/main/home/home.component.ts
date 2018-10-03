@@ -5,6 +5,8 @@ import { FuseTranslationLoaderService } from '@fuse/services/translation-loader.
 import { locale as english } from './i18n/en';
 import { locale as turkish } from './i18n/tr';
 
+import { Meta } from '@angular/platform-browser';
+
 @Component({
     selector   : 'home',
     templateUrl: './home.component.html',
@@ -20,11 +22,16 @@ export class HomeComponent
      * @param {FuseTranslationLoaderService} _fuseTranslationLoaderService
      */
     constructor(
+        private meta: Meta,
         private activatedRoute: ActivatedRoute,
         private _fuseTranslationLoaderService: FuseTranslationLoaderService
     )
     {
         this._fuseTranslationLoaderService.loadTranslations(english, turkish);
+        this.meta.addTags([
+          { name: 'robots', content: 'noindex' },
+          { name: 'Health Port Blockchain Electronic Health Records (EHR)', content: 'Health Port gives patientâ€™s control over storage and access to their personal Electronic Health Record (EHR) via leveraging blockchain technology.' }
+        ], true);
     }
 
     ngOnInit() {
