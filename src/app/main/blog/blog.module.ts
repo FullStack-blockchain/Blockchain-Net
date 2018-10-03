@@ -11,6 +11,10 @@ const routes = [
     {
         path     : 'blog',
         component: BlogComponent
+    },
+    {
+        path: "blog/:id",
+        component: BlogComponent 
     }
 ];
 
