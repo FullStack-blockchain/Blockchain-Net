@@ -134,8 +134,14 @@
         width: 72.3%;
         padding: 30px;
     }
-    #in-footer .contents-bt p {
+    #in-footer .contents-bt .fcopyright {
         color: #88888c;
         font-size: 15px;
+    }
+    #in-footer .contents-bt .fcopyright a{
+        color: #88888c;
+        font-size: 15px;
+        cursor: pointer;
+        text-decoration: none;
     }
 }

@@ -21,7 +21,8 @@ export const navigation: FuseNavigation[] = [
         type : 'item',
         icon : 'whitepaper',
         url  : 'https://github.com/Health-Port/White-Paper',
-        externalUrl : true
+        externalUrl : true,
+        openInNewTab : true
     },
     {
         id   : 'source-code',
@@ -29,7 +30,8 @@ export const navigation: FuseNavigation[] = [
         type : 'item',
         icon : 'sourcecode',
         url  : 'https://github.com/Health-Port',
-        externalUrl : true
+        externalUrl : true,
+        openInNewTab : true
     },
     {
         id   : 'blog',
@@ -37,6 +39,7 @@ export const navigation: FuseNavigation[] = [
         type : 'item',
         icon : 'blog',
         url  : 'https://medium.com/@healthport',
-        externalUrl : true
+        externalUrl : true,
+        openInNewTab : true
     }
 ];
