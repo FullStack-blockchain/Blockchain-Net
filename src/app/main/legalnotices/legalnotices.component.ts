@@ -8,12 +8,12 @@ import { locale as turkish } from './i18n/tr';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.scss']
+  selector: 'legalnotices',
+  templateUrl: './legalnotices.component.html',
+  styleUrls: ['./legalnotices.component.scss']
 })
 
-export class BlogComponent implements OnInit {
+export class LegalnoticesComponent implements OnInit {
 
     id: any;
     ncount: number;

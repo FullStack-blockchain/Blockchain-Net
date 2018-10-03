@@ -4,23 +4,23 @@ import { TranslateModule } from '@ngx-translate/core';
 
 import { FuseSharedModule } from '@fuse/shared.module';
 
-import { BlogComponent } from './blog.component';
+import { LegalnoticesComponent } from './legalnotices.component';
 import { MatButtonModule, MatIconModule, MatCheckboxModule } from '@angular/material';
 
 const routes = [
     {
-        path     : 'blog',
-        component: BlogComponent
+        path     : 'legalnotices',
+        component: LegalnoticesComponent
     },
     {
-        path: "blog/:id",
-        component: BlogComponent 
+        path: "legalnotices/:id",
+        component: LegalnoticesComponent 
     }
 ];
 
 @NgModule({
     declarations: [
-        BlogComponent
+        LegalnoticesComponent
     ],
     imports     : [
         RouterModule.forChild(routes),
@@ -34,10 +34,10 @@ const routes = [
         FuseSharedModule
     ],
     exports     : [
-        BlogComponent
+        LegalnoticesComponent
     ]
 })
 
-export class BlogModule
+export class LegalnoticesModule
 {
 }

@@ -19,7 +19,7 @@ import { LayoutModule } from 'app/layout/layout.module';
 import { SampleModule } from 'app/main/sample/sample.module';
 import { HomeModule } from 'app/main/home/home.module';
 import { AboutModule } from 'app/main/about/about.module';
-import { BlogModule } from 'app/main/blog/blog.module';
+import { LegalnoticesModule } from 'app/main/legalnotices/legalnotices.module';
 import { SignupModule } from 'app/main/signup/signup.module';
 import { LoginModule } from 'app/main/login/login.module';
 import { MyaccountModule } from 'app/main/myaccount/myaccount.module';
@@ -30,8 +30,8 @@ const appRoutes: Routes = [
         redirectTo: 'home'
     },
     {
-        path      : 'blog',
-        redirectTo: 'blog'
+        path      : 'legalnotices',
+        redirectTo: 'legalnotices'
     },
     {
         path      : 'login',
@@ -77,7 +77,7 @@ const appRoutes: Routes = [
         LayoutModule,
         HomeModule,
         AboutModule,
-        BlogModule,
+        LegalnoticesModule,
         SignupModule,
         LoginModule,
         MyaccountModule
