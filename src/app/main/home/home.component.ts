@@ -30,7 +30,7 @@ export class HomeComponent
     {
         this._fuseTranslationLoaderService.loadTranslations(english, turkish);
 
-        //this.titleService.setTitle("Health Port Blockchain Electronic Health Records (EHR)");
+        this.titleService.setTitle("Health Port Blockchain Electronic Health Records (EHR)");
         this.meta.addTags([
           { name: 'robots', content: 'noindex' },
           { httpEquiv: 'Content-Type', content: 'text/html'},

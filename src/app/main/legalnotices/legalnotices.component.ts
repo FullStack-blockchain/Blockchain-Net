@@ -35,6 +35,7 @@ export class LegalnoticesComponent implements OnInit {
     {
         this._fuseTranslationLoaderService.loadTranslations(english, turkish);
 
+        this.titleService.setTitle("Legal Notices from Health Port");
         this.meta.addTags([
           { name: 'robots', content: 'noindex' },
           { httpEquiv: 'Content-Type', content: 'text/html'},

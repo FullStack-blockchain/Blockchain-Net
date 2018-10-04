@@ -45,6 +45,7 @@ export class MyaccountComponent implements OnInit {
         this.white_color = '#fff';
         this._fuseTranslationLoaderService.loadTranslations(english, turkish);
 
+        this.titleService.setTitle("User Dashboard on Health Port");
         this.meta.addTags([
           { name: 'robots', content: 'noindex' },
           { httpEquiv: 'Content-Type', content: 'text/html'},

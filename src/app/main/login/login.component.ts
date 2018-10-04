@@ -27,6 +27,7 @@ export class LoginComponent implements OnInit {
     {
         this._fuseTranslationLoaderService.loadTranslations(english, turkish);
 
+        this.titleService.setTitle("Login to Health Port");
         this.meta.addTags([
           { name: 'robots', content: 'noindex' },
           { httpEquiv: 'Content-Type', content: 'text/html'},
